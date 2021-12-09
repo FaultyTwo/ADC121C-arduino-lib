@@ -55,7 +55,7 @@ Get high limit value.<br>
 Default value: 0FFFh (4095)
 
 ```C
-void setHighLimit(uint16_t v\al);
+void setHighLimit(uint16_t val);
 ```
 Set high limit value.<br>
 **^Shouldn't exceed 4095, otherwise will be set back to 4095.**
@@ -161,7 +161,7 @@ Enable or disable the ALERT hold logic in alert status register.
 |Value|Description|
 |-----|----------------------------------|
 |logic 0|Alert will self-clear when measured value is more than hysteresis|
-|logic 1|Alert will not self-clear unless a one is written in alert status register|
+|logic 1|Alert will not self-clear unless a one is written to the alert status register, either high or low|
 
 ```C
 void setCycleTime(uint8_t val);
