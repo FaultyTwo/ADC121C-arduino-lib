@@ -1,11 +1,11 @@
 {
-  "name": "",
-  "keywords": "",
-  "description": "",
+  "name": "ADC121C-arduino-lib",
+  "keywords": "ADC, I2C, Alert",
+  "description": "An Arduino library for ADC121CXXX, I2C 12-bit ADC with Alert Function",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/FaultyTwo/"
+    "url": "https://github.com/FaultyTwo/ADC121C-arduino-lib"
   },
   "authors": 
   [

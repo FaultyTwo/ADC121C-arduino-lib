@@ -6,7 +6,7 @@ For technical informations, please refer to this [datasheet.](https://www.ti.com
 ## Supported Devices
 - ADC121C021
 - ADC121C021Q
-- ADC121C027
+- *ADC121C027*
 
 ## How To Use The Library
 Include the library, then simply create a constructor like this:

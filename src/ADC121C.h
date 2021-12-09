@@ -35,8 +35,6 @@ class ADC121C{
     void setAlertHold(bool val);
     void setCycleTime(uint8_t val);
     int8_t checkConfig(uint8_t op);
-
-    //no config checking functions.. it's already bloated in here
     
   private:
     TwoWire *_wire;
