@@ -119,6 +119,8 @@ Configure the alert status register.
 |0x02| true | false |
 |0x03| true | true |
 
+****^Beyond than 0x03, this function won't do anything to the alert status register.****
+
 ```C
 void setPolarity(bool val);
 ```
@@ -182,7 +184,7 @@ Configure automatic conversion mode.
 ```C
 int8_t checkConfig(uint8_t op);
 ```
-Configure automatic conversion mode.
+Check a configure.
 
 |'op'|Features|
 |----------|-------------------|
