@@ -4,7 +4,7 @@ ADC121C::ADC121C(uint8_t adr){
   _adr = adr;
 }
 
-void ADC121C::begin(TwoWire &wire = Wire){
+void ADC121C::begin(TwoWire &wire){
   _wire = &wire;
   _wire->begin();
 }
