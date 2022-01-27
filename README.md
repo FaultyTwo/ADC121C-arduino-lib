@@ -24,9 +24,11 @@ void setup(){
 
 # Methods
 ```C
-void begin();
+void begin(TwoWire &wirePort = Wire);
 ```
 Initiate the ADC121C library
+
+Can be configured to use other I2C ports from a 'TwoWire' object. For default I2C port, just leave the parameter blank.
 
 ```C
 unsigned int readConversion();
