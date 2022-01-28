@@ -22,6 +22,21 @@ void setup(){
   ...
 ```
 
+To use this library with other I2C ports, you can simply create a TwoWire object then parse it into the 'begin' function:
+```C
+// ESP32
+#define I2C_SDA 33
+#define I2C_SCL 32
+
+TwoWire esp = TwoWire(0);
+ADC121C adc(*i2c device address*);
+
+void setup(){
+  esp.begin(I2C_SDA, I2C_SCL, 1000000);
+  adc.begin(&esp);
+}
+```
+
 # Methods
 ```C
 void begin(TwoWire &wirePort = Wire);
