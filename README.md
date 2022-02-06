@@ -1,5 +1,5 @@
 # ADC121C
-An Arduino for ADC121CXXX, I2C 12-Bit Resolution ADC with Alert Function
+An Arduino library for ADC121CXXX, I2C 12-Bit Resolution ADC with Alert Function
 
 For technical informations, please refer to this [datasheet.](https://www.ti.com/lit/ds/symlink/adc121c021.pdf?ts=1639027374303&ref_url=https%253A%252F%252Fwww.google.com.sg%252F)
 
