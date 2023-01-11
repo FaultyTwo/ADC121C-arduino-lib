@@ -120,7 +120,6 @@ Set the highest conversion result.<br>
 uint8_t getAlertStatus();
 ```
 Get the alert status register value.<br>
-**^Shouldn't exceed 0x03, otherwise will be set back to 0x03.**
 
 ```C
 void setAlertStatus(uint8_t val);
