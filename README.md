@@ -1,5 +1,5 @@
-# ADC121C
-An Arduino library for ADC121CXXX, I2C 12-Bit Resolution ADC with Alert Function
+# ADC121CXXX
+Arduino library for ADC121CXXX, I2C 12-Bit Resolution ADC with Alert Function
 
 For technical informations, please refer to this [datasheet.](https://www.ti.com/lit/ds/symlink/adc121c021.pdf?ts=1639027374303&ref_url=https%253A%252F%252Fwww.google.com.sg%252F)
 
@@ -51,7 +51,7 @@ unsigned int readConversion(bool &boo);
 ```
 Read the ADC conversion value from the device. Return as decimal within the resolution of 12-bit (0 to 4095).
 
-This method also can be overloaded with a variable to check if alert condition has occured or not.
+This method also can be overloaded with a variable to check if alert condition has occured or not too.
 
 ```C
 unsigned int getLowLimit();

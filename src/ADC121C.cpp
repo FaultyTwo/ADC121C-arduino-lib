@@ -29,9 +29,6 @@ unsigned int ADC121C::readConversion(){
   return data;
 }
 
-// get set blah blah blah
-// for your convenient sake
-// 2 bytes config
 unsigned int ADC121C::getLowLimit(){
   return readRegister(0x03);
 }
@@ -82,8 +79,6 @@ void ADC121C::setHighConv(uint16_t val){
   writeRegister(0x07,val);
 }
 
-// 1 byte config
-// alert status reg
 uint8_t ADC121C::getAlertStatus(){
   return readRegister(0x01);
 }
@@ -93,8 +88,6 @@ void ADC121C::setAlertStatus(uint8_t val){
     writeRegister(0x01,val);
 }
 
-// configurations
-// for your convenience sake..
 void ADC121C::setPolarity(bool val){
   uint8_t data = readRegister(0x02);
   bitWrite(data,0,val);
