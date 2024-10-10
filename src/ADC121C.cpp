@@ -147,7 +147,6 @@ uint16_t ADC121C::readRegister(uint8_t reg){
   _wire->requestFrom(_adr,uint8_t(2));
   data[0] = Wire.read();
   data[1] = Wire.read();
-  _wire->endTransmission();
   if(reg == 0x01 || reg == 0x02){ //for one byte register
     return data[0];
   } else {
